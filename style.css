@@ -105,7 +105,7 @@ a:hover {
 
 
 /**Home**/
-#home-section {
+#home {
 	height: 100vh;
 	display: flex; 
 	align-items: center; 
@@ -116,10 +116,14 @@ a:hover {
 
 
 /**About**/
-#about-section {
+#about {
 	background-color: rgb(150, 168, 202);
 	padding: 50px;
 	min-height:100vh;
+}
+
+#imgFakeCode {
+	width: 100%;
 }
 
 #fakeCode {
@@ -168,18 +172,18 @@ ul {
 	margin-bottom:40px;
 }
 
-#education-section {
+#school {
 	padding:50px;
 	padding-bottom: 80px;
 	min-height:100vh;
 	background-color: rgb(21, 27, 21);
 }
 
-#education-section * {
+#school * {
 	color:rgb(183, 204, 242);
 }
 
-#education-title img {
+#imgSchool {
 	width: 10%;
 }
 
@@ -195,7 +199,7 @@ ul {
 	margin: 8px;
 }
 
-#coursework {
+#courses {
 	align-items: flex-start;
 	font-size: 120%;
 }
