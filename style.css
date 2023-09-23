@@ -207,11 +207,13 @@ ul {
 
 ul {
   list-style-type: circle;
+  margin: 0; /* Remove margin */
 }
 
 li {
-  margin: 5px;
+  margin: 5px; /* Keep margin only for list items */
 }
+
 
 #current {
 	font-size: 80%;
