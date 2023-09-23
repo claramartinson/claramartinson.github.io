@@ -180,30 +180,30 @@ ul {
 	margin-bottom:40px;
 }
 
-#school {
+#education {
 	padding:50px;
 	padding-bottom: 80px;
 	min-height:100vh;
 	background-color: rgb(21, 27, 21);
 }
 
-#school * {
+#education * {
 	color:rgb(183, 204, 242);
 }
 
-#imgSchool {
+#imgeducation {
 	width: 10%;
 }
 
-#school {
+#education {
 	align-items: flex-start;
 }
 
-#school p {
+#education p {
 	font-size: 14px;
 }
 
-#school * {
+#education * {
 	margin: 8px;
 }
 
