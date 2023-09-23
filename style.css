@@ -54,47 +54,54 @@ a:hover {
 	width:100%;
 }
 
-/* Navbar styles */
-.navbar {
-  background-color: rgb(137, 164, 214); /* Background color */
-  overflow: hidden;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  transition: top 0.4s;
-  box-shadow: 2px 2px 5px rgb(87, 98, 120);
-  z-index: 1;
+/**Navbar**/
+#nav {
+	left: 0%;
+	right: 0%;
+	background-color: white;
+	position: fixed;
+	top: -70px;
+	display: block;
+	transition: top 0.4s;
+	box-shadow: 2px 2px 5px #aaaaaa;
+	z-index: 1;
+
 }
 
-/* Navbar links */
+.nav-item:first-child {
+	float: left;
+	font-weight: 500;
+}
+
 .nav-item {
-  color: #2a2d34; /* Text color */
-  float: right;
-  display: block;
-  text-align: center;
-  padding: 22px;
-  text-decoration: none;
-  font-size: 17px;
-  font-weight: 500;
+	color: #2a2d34;
+	float: right;
+	display: block;
+	text-align: center;
+	padding: 22px;
+	text-decoration: none;
+	font-size: 17px;
+	font-weight: 500;
 }
 
-/* On hover, change the background color */
 .nav-item:hover {
-  background-color: rgb(137, 164, 214); /* Hover color */
-  color: #2a2d34; /* Hover text color */
+	color: #2a2d34;
+	transition: 0.5s;
 }
 
-/* Add styles for active link (optional) */
-.nav-item.active {
-  background-color: #555; /* Active link background color */
+
+.nav-item:hover:after {
+    transform: scaleX(1);
 }
 
-/* Smooth scrolling transition */
-html {
-  scroll-behavior: smooth;
+.nav-item::after {
+    display:block;
+    content: '';
+    border-bottom: solid 3px #d3cbf5;  
+    transform: scaleX(0);  
+    transition: 350ms ease-in-out;
+    transform-origin: 0% 50%;
 }
-
 
 
 /**Home**/
@@ -208,13 +215,11 @@ ul {
 
 ul {
   list-style-type: circle;
-  margin: 0; /* Remove margin */
 }
 
 li {
   margin: 5px; /* Keep margin only for list items */
 }
-
 
 #current {
 	font-size: 80%;
