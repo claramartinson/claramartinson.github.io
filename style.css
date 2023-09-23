@@ -60,12 +60,11 @@ a:hover {
 	right: 0%;
 	background-color:rgb(82, 212, 110);
 	position: fixed;
-	top: -70px;
+	top: 0;
 	display: block;
 	transition: top 0.4s;
 	box-shadow: 2px 2px 5px rgb(87, 98, 120);
 	z-index: 1;
-
 }
 
 .nav-item:first-child {
