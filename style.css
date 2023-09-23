@@ -212,16 +212,14 @@ ul {
 	font-size: 120%;
 }
 
-li {
-	margin: 5px;
+ul {
+  list-style-type: circle;
 }
 
-ul {
-	list-style-type: circle;
+li {
+  margin: 5px;
 }
 
 #current {
 	font-size: 80%;
 }
-
-
