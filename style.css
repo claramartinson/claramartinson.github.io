@@ -101,8 +101,8 @@ a:hover {
 /**About**/
 #about-section {
 	background-color: rgb(150, 168, 202);
-	padding: 50px;
-	min-height:100vh;
+	align-items: center;
+    justify-content: center;
 }
 
 #about-image {
@@ -115,8 +115,9 @@ a:hover {
 	margin-top: 20px;
 }
 
-#imgFakeCode {
-	width: 100%;
+#image-container {
+	width: 390px;
+    overflow:hidden;
 }
 
 #fakeCode {
