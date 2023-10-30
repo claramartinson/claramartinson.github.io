@@ -98,27 +98,6 @@ a:hover {
 }
 
 
-
-/**Home**/
-#home-section {
-	height: 100vh;
-	display: flex; 
-	align-items: center; 
-	justify-content: center;
-	flex-wrap: wrap;
-	align-content: center;
-}
-
-#landing-container {
-	padding-right: 4%;
-}
-
-#landing-text {
-	max-width:90%;
-	text-align: center;
-}
-
-
 /**About**/
 #about-section {
 	background-color: rgb(150, 168, 202);
