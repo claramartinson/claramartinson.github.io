@@ -101,7 +101,8 @@ a:hover {
 /**About**/
 #about-section {
 	background-color: rgb(150, 168, 202);
-
+    padding: 50px;
+	min-height:100vh;
 }
 
 #image-console{
