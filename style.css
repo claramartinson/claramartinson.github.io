@@ -174,7 +174,7 @@ ul {
 	margin-bottom:40px;
 }
 
-#education {
+#education-serc {
 	padding:50px;
 	padding-bottom: 80px;
 	min-height:100vh;
@@ -185,7 +185,7 @@ ul {
 	color:rgb(183, 204, 242);
 }
 
-#imgeducation {
+#education-title img{
 	width: 10%;
 }
 
