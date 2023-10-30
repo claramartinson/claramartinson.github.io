@@ -104,6 +104,10 @@ a:hover {
 
 }
 
+#image-console{
+    width: 100%;
+}
+
 #about-image {
     height: 450px;
 	border-radius: 4px;
