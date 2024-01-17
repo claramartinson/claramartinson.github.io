@@ -170,11 +170,11 @@ ul {
 	padding:50px;
 	padding-bottom: 80px;
 	min-height:100vh;
-	background-color: rgb(21, 27, 21);
+	background-color: rgb(78, 94, 123);
 }
 
 #education-section * {
-	color:rgb(183, 204, 242);
+	color:rgb(25, 31, 43);
 }
 
 #education-title img{
@@ -213,7 +213,7 @@ ul {
 //**project section**/
 #project-section {
 	margin: 50px;
-    background-color: rgb(117, 126, 117);
+    background-color: rgb(174, 191, 220);
 }
 
 #button-section {
@@ -225,7 +225,7 @@ ul {
 	border: none;
 	outline: none;
 	padding: 12px 16px;
-	background-color: rgb(99, 109, 99);
+	background-color: rgb(121, 146, 190);
 	cursor: pointer;
 	border-radius: 4px;
 	margin: 4px;
@@ -233,11 +233,11 @@ ul {
 }
 
 .filter-button:hover {
-	background-color: rgb(179, 192, 179);
+	background-color: rgb(160, 183, 222);
 }
 
 .filter-button.active {
-	background-color: rgb(44, 53, 87);
+	background-color: rgb(69, 83, 105);
 	color: white;
 }
 
