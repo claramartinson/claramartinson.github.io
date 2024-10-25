@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clara's Corner</title>
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" type="text/css" href="../static/style.css">
 </head>
 <body>
     <nav>
@@ -13,7 +13,7 @@
     <main class="main-content">
         <div class="corner-container">
             <!-- Base image with usemap attribute -->
-            <img class="corner-image" src="{{ url_for('static', filename='blue-corner.png') }}" alt="Blue Corner Scene" useMap="#buildingMap" />
+            <img class="corner-image" src="../static/blue-corner.png" alt="Blue Corner Scene" useMap="#buildingMap" />
             
             <!-- Image map defining clickable regions -->
             <map name="buildingMap">
@@ -40,9 +40,9 @@
             </map>
             
             <!-- Full alternate colored versions of the scene -->
-            <img id="pink-coming-soon" class="hover-state" src="{{ url_for('static', filename='pink-coming-soon.png') }}" alt="Coming Soon Highlighted" />
-            <img id="pink-book" class="hover-state" src="{{ url_for('static', filename='pink-book.png') }}" alt="Book Store Highlighted" />
-            <img id="pink-bar" class="hover-state" src="{{ url_for('static', filename='pink-bar.png') }}" alt="Bar Highlighted" />
+            <img id="pink-coming-soon" class="hover-state" src="../static/pink-coming-soon.png" alt="Coming Soon Highlighted" />
+            <img id="pink-book" class="hover-state" src="../static/pink-book.png" alt="Book Store Highlighted" />
+            <img id="pink-bar" class="hover-state" src="../static/pink-bar.png" alt="Bar Highlighted" />
         </div>
     </main>
 </body>
