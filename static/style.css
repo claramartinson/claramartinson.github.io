@@ -1,16 +1,21 @@
-body, html {
+* {
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    box-sizing: border-box;
+}
+
+body, html {
     height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    overflow: hidden;
 }
 
 nav {
     text-align: center;
-    background-color: black;
+    background-color: #333;
     color: white;
     padding: 10px;
     width: 100%;
@@ -20,21 +25,18 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: calc(100vh - 30px); /* Full screen minus navbar height */
-    width: 100%;
-    box-sizing: border-box;
+    height: 100vh;
+    width: 100vw;
 }
 
 .corner-container {
-    border: 5px solid black; /* Black border around the image */
-    max-width: 90vw; /* Makes sure the image doesn't take up full width */
-    max-height: 90vh; /* Makes sure the image doesn't take up full height */
-    overflow: hidden;
+    border: 5px solid black;
+    max-width: 90vw;
+    max-height: 90vh;
+    position: relative;
 }
 
-.corner-image {
+#corner-image {
     width: 100%;
     height: auto;
-    display: block;
-    object-fit: cover;
 }
