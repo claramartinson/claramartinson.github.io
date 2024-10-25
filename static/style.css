@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Base layout */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navigation */
+nav {
+    background-color: #333;
+    height: 60px;
+    width: 100%;
+}
+
+/* Main content area */
+.main-content {
+    flex-grow: 1;
+    position: relative;
+    background-color: black; /* Prevents any potential gaps */
+}
+
+
+.corner-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.corner-illustration {
+    width: 100%;
+    height: calc(100vh - 60px); /* Full height minus nav */
+    object-fit: cover;
+    display: block;
+}
+
+/* Hover state images */
+.hover-images {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+    object-fit: cover;
+}
+
+/* Hover effects */
+area[data-building="coming-soon"]:hover ~ #pink-coming-soon,
+area[data-building="book"]:hover ~ #pink-book,
+area[data-building="bar"]:hover ~ #pink-bar {
+    opacity: 1;
+}
