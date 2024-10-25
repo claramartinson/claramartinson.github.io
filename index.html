@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,42 +8,38 @@
 </head>
 <body>
     <nav>
-        <h1>welcome to clara's corner. click a building to start</h1>
+        <h1>Welcome to Clara's Corner. Click a building to start.</h1>
     </nav>
     <main class="main-content">
         <div class="corner-container">
-            <!-- Base image with usemap attribute -->
-            <img class="corner-image" src="../static/blue-corner.png" alt="Blue Corner Scene" useMap="#buildingMap" />
+            <!-- Base image that will change on hover -->
+            <img id="corner-image" class="corner-image" src="../static/blue-corner.png" alt="Blue Corner Scene" usemap="#buildingMap">
             
             <!-- Image map defining clickable regions -->
             <map name="buildingMap">
-                <!-- Coming Soon building - leftmost -->
+                <!-- Coming Soon building -->
                 <area data-building="coming-soon"
                       shape="poly" 
                       coords="504,932,482,492,962,61,1145,422,1123,968"
-                      href="#" 
-                      alt="Coming Soon Building" />
+                      href="#"
+                      alt="Coming Soon Building">
                 
-                <!-- Book Store (Clara's) - middle building -->
+                <!-- Book Store -->
                 <area data-building="book"
                       shape="poly" 
                       coords="1136,960,1521,936,1521,381,1372,344,1267,68,1026,186,1147,422"
-                      href="#" 
-                      alt="Book Store" />
+                      href="#"
+                      alt="Book Store">
                 
-                <!-- Bar - rightmost building -->
+                <!-- Bar -->
                 <area data-building="bar"
                       shape="poly" 
                       coords="1418,344,1527,326,1862,398,1840,678,1878,734,1839,736,1839,941,1525,941,1527,383"
-                      href="#" 
-                      alt="Bar" />
+                      href="#"
+                      alt="Bar">
             </map>
-            
-            <!-- Full alternate colored versions of the scene -->
-            <img id="pink-coming-soon" class="hover-state" src="../static/pink-coming-soon.png" alt="Coming Soon Highlighted" />
-            <img id="pink-book" class="hover-state" src="../static/pink-book.png" alt="Book Store Highlighted" />
-            <img id="pink-bar" class="hover-state" src="../static/pink-bar.png" alt="Bar Highlighted" />
         </div>
     </main>
+    <script src="../static/script.js"></script>
 </body>
 </html>
