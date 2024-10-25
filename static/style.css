@@ -1,33 +1,40 @@
 body, html {
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
+    overflow: hidden;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 nav {
     text-align: center;
-    background-color: #333;
+    background-color: black;
     color: white;
     padding: 10px;
+    width: 100%;
 }
 
 .main-content {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: calc(100vh - 50px); /* Full screen minus navbar height */
-    position: relative;
+    height: calc(100vh - 30px); /* Full screen minus navbar height */
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .corner-container {
-    width: 100%;
-    height: 100%;
+    border: 5px solid black; /* Black border around the image */
+    max-width: 90vw; /* Makes sure the image doesn't take up full width */
+    max-height: 90vh; /* Makes sure the image doesn't take up full height */
     overflow: hidden;
 }
 
 .corner-image {
     width: 100%;
-    height: 100%;
+    height: auto;
+    display: block;
     object-fit: cover;
 }
